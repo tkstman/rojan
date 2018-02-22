@@ -1,0 +1,94 @@
+/* .navbar-nav {
+  margin: 0 auto;
+  color: #fff;
+  font-family: Avenir Medium;
+  font-size: 12px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+
+.nav-link{
+
+  color: purple;
+
+}
+
+.nav-item{
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+
+#under{
+    height:2px;
+    width:100%;
+    background-image: url("../img/shaded-border.png");
+    background-size:100% auto;
+} */
+ .navbar
+{
+  background-image: url(http://www.hdrlabs.com/gallery/realhdr/media/KitchenWindow_PM_DetailsEnhancer.jpg);
+}
+
+.navbar-nav.mr-auto
+{
+    position: relative;
+    margin: 0 auto;
+}
+
+.btn.btn-outline-secondary.dropdown-toggle, .btn.btn-outline-secondary
+{
+  color:#ff9e9e;
+}
+
+.black-out
+{
+  background-color:#26323e;
+  bottom:0;
+}
+
+.footer-to-top
+{
+  padding-top:10px;
+  padding-bottom:10px;
+  background-color:#26323e;
+  margin-bottom:44px;
+}
+
+.footer-to-top:hover
+{
+  background-color:#405061;
+  color:white;
+}
+
+.navbar-brand
+{
+  width: 120px;
+
+}
+
+.row.latest
+{
+  padding-top:8px;
+}
+
+
+
+.univ-search
+{
+  width: 50%;
+}
+
+.univ-search .input-group
+{
+    width: -webkit-fill-available;
+}
+
+.container
+{
+  padding-right:0px;
+  padding-left:0px;
+  max-width:100%;
+
+} /**/
