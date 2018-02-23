@@ -18,20 +18,20 @@
         </div>
         <input type="text" class="form-control" aria-label="Text input with dropdown button">
         <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button">Button</button>
+          <button class="btn btn-outline-secondary search-btn" type="button"></button>
         </div>
       </div>
     </form>
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Account<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Inventory</a>
       </li>
       <li class="nav-item dropdown  active">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
+          Contact
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Action</a>
@@ -41,7 +41,7 @@
         </div>
       </li>
       <li class="nav-item  active">
-        <a class="nav-link" href="#">Disabled</a>
+        <a class="nav-link" href="#">About</a>
       </li>
     </ul>
 

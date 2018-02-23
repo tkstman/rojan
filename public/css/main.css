@@ -29,6 +29,8 @@
  .navbar
 {
   background-image: url(http://www.hdrlabs.com/gallery/realhdr/media/KitchenWindow_PM_DetailsEnhancer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .navbar-nav.mr-auto
@@ -42,10 +44,34 @@
   color:#ff9e9e;
 }
 
+.search-btn
+{
+    background-repeat: no-repeat;
+    width: 100%;
+    background-image: url(../img/searchicon.png);
+    background-size: 30px 30px;
+    background-position-x: 10px;
+}
+
+.input-group-append, .search-btn
+{
+    height: 31px;
+    width: 59.56px;
+}
+
 .black-out
 {
   background-color:#26323e;
   bottom:0;
+  background-image: url(http://www.hdrlabs.com/gallery/realhdr/media/KitchenWindow_PM_DetailsEnhancer.jpg);
+  background-position-y:152px;
+  background-size: cover;
+ /*background-repeat: no-repeat;   */
+}
+
+.row
+{
+  margin-right: 0;
 }
 
 .footer-to-top
@@ -68,9 +94,20 @@
 
 }
 
+.footer-content
+{
+  width: max-content;
+  text-align: center;
+}
+
 .row.latest
 {
   padding-top:8px;
+}
+
+.card-img-top.shadowed
+{
+  box-shadow: 3px 3px #00000042;
 }
 
 

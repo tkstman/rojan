@@ -1,4 +1,4 @@
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide wow slideInRight" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -6,8 +6,9 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
+      <a href="http://www.facebook.com">
       <img class="d-block w-100" src="{{URL::to('img/1.jpg')}}" width="100%" height="350" alt="First slide">
-    </div>
+    </a></div>
     <div class="carousel-item">
       <img class="d-block w-100" src="{{URL::to('img/2.jpg')}}" width="100%" height="350" alt="Second slide">
     </div>

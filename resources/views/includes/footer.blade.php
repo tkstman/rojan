@@ -5,7 +5,9 @@
           <div class="mx-auto">Back To Top</div>
         </div>
       </a>
-      <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
-      <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+      <div class="mx-auto footer-content">
+        <p>ROJAN Enterprise © 2018</p>
+        <p> Check out our <a href="http://www.rojan.com">Homepage</a> or contact us <a href="http://www.rojan.com/contactus">Contact Us</a>.</p>
+      </div>
     </div>
 </footer>
