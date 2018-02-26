@@ -1,6 +1,6 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark ">
-  <a class="navbar-brand" href="#">ROJAN</a>
+  <a class="navbar-brand wow rollIn" href="#">ROJAN</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -18,20 +18,20 @@
         </div>
         <input type="text" class="form-control" aria-label="Text input with dropdown button">
         <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button">Button</button>
+          <button class="btn btn-outline-secondary search-btn" type="button"></button>
         </div>
       </div>
     </form>
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Account<span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Inventory</a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown  active">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
+          Contact
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Action</a>
@@ -40,8 +40,8 @@
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+      <li class="nav-item  active">
+        <a class="nav-link" href="#">About</a>
       </li>
     </ul>
 
