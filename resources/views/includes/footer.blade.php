@@ -7,7 +7,7 @@
       </a>
       <div class="mx-auto footer-content">
         <p>ROJAN Enterprise © 2018</p>
-        <p> Check out our <a href="http://www.rojan.com">Homepage</a> or contact us <a href="http://www.rojan.com/contactus">Contact Us</a>.</p>
+        <p> Check out our <a href="{{route('home')}}">Homepage</a> or contact us <a href="{{route('contact')}}">Contact Us</a>.</p>
       </div>
     </div>
 </footer>
