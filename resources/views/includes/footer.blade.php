@@ -1,4 +1,4 @@
-<footer class="text-muted footer black-out mt-auto">
+<footer class="text-light footer black-out mt-auto">
     <div class="container">
       <a href="#top" class="">
         <div class="row footer-to-top">

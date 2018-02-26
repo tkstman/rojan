@@ -26,9 +26,19 @@
     background-image: url("../img/shaded-border.png");
     background-size:100% auto;
 } */
+
+/*
+  HEADER
+*/
+.navbar-brand
+{
+  width: 120px;
+
+}
  .navbar
 {
   background-image: url(http://www.hdrlabs.com/gallery/realhdr/media/KitchenWindow_PM_DetailsEnhancer.jpg);
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -59,21 +69,14 @@
     width: 59.56px;
 }
 
-.black-out
-{
-  background-color:#26323e;
-  bottom:0;
-  background-image: url(http://www.hdrlabs.com/gallery/realhdr/media/KitchenWindow_PM_DetailsEnhancer.jpg);
-  background-position-y:152px;
-  background-size: cover;
- /*background-repeat: no-repeat;   */
-}
-
 .row
 {
   margin-right: 0;
 }
 
+/*
+  FOOTER
+*/
 .footer-to-top
 {
   padding-top:10px;
@@ -88,10 +91,21 @@
   color:white;
 }
 
-.navbar-brand
+.black-out
 {
-  width: 120px;
+  background-color:#26323e;
+  bottom:0;
+  background-image: url(http://www.hdrlabs.com/gallery/realhdr/media/KitchenWindow_PM_DetailsEnhancer.jpg);
+  background-position-y:152px;
+  background-size: cover;
+  background-attachment: fixed;
 
+ /*background-repeat: no-repeat;   */
+}
+
+.text-muted.footer
+{
+  color:white;
 }
 
 .footer-content
@@ -109,8 +123,6 @@
 {
   box-shadow: 3px 3px #00000042;
 }
-
-
 
 .univ-search
 {
