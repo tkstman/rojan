@@ -23,11 +23,11 @@
 /*
   HEADER
 */
-.navbar-brand
+/* .navbar-brand
 {
   width: 120px;
 
-}
+} */
  .navbar
 {
   background-image: url(http://www.hdrlabs.com/gallery/realhdr/media/KitchenWindow_PM_DetailsEnhancer.jpg);
@@ -133,4 +133,89 @@
   padding-left:0px;
   max-width:100%;
 
-} /**/
+}
+
+/*MODAL STYLING*/
+#contact_modal
+{
+  background-color: #381005c9;
+}
+
+.modal-dialog
+{
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.modal-content
+{
+  height: 100%;
+  width: 100%;
+  background-color:transparent;
+}
+
+.modal-title
+{
+  font-family: Garamond;
+  font-size: 50px;
+}
+
+.modal-body
+{
+    font-family: Avenir Roman;
+    font-size: 16px;
+}
+
+.modal-body, .form-control
+{
+  border-radius: 0;
+}
+
+.modal-body h4, h5, .close
+{
+  color:white;
+}
+
+.modal-body label
+{
+  color:#93918e;
+}
+
+#sendContactBtn
+{
+  border-radius:0;
+  background-color: #007bff00;
+  border-color:#f8f9fa9e;
+}
+
+.close, #sendContactBtn:hover
+{
+  background-color:#bdbdbd54;
+}
+
+.logo
+{
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: 160px 70px;
+    height: 70px;
+    width: 160px;
+}
+
+.card.contact
+{
+  background-color: transparent;
+  border:0;
+}
+
+.cnt_info
+{
+  margin-top:10px;
+}
+
+.cnt_info p
+{
+  color:white;
+}
