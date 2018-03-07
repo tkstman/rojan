@@ -115,6 +115,12 @@
 .card-img-top.shadowed
 {
   box-shadow: 3px 3px #00000042;
+  /* height: 225px;
+  width: 100%;
+  display: block;
+  background-image: url(https://image.freepik.com/free-photo/cute-cat-picture_1122-449.jpg);
+  background-size: cover;
+  background-position: center; */
 }
 
 .univ-search
@@ -136,7 +142,7 @@
 }
 
 /*MODAL STYLING*/
-#contact_modal
+#contact_modal, #about_modal
 {
   background-color: #381005c9;
 }
@@ -218,4 +224,37 @@
 .cnt_info p
 {
   color:white;
+}
+
+.col-sm p
+{
+  color:white;
+}
+
+.card.mb-3.box-shadow
+{
+  overflow:hidden;
+}
+
+.card.mb-3.box-shadow:hover a .card-img-top.shadowed,
+.card.mb-3.box-shadow:focus a .card-img-top.shadowed
+{
+  transform: scale(1.2);
+  transition: all .5s;
+}
+
+.card-img-top.shadowed::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red; /**rgba(52, 73, 94, 0.75);*/
+}
+
+.card.mb-3.box-shadow:hover a .card-img-top.shadowed:before,
+.card.mb-3.box-shadow:focus a .card-img-top.shadowed:before {
+  display: block;
 }

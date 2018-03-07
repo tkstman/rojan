@@ -1,5 +1,5 @@
 <!-- MODAL STRUCTURE -->
-<div class="modal wow fadeIn" id="contact_modal" tabindex="-1" role="dialog">
+<div class="modal" id="contact_modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">

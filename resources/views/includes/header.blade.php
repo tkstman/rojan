@@ -45,7 +45,7 @@
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li> -->
-      <li class="nav-item  active">
+      <li class="nav-item active about_page">
         <a class="nav-link" href="#">About</a>
       </li>
     </ul>
