@@ -16,4 +16,9 @@ class UserController extends Controller
     {
        return view('home');
     }
+
+    public function getSearch()
+    {
+       return view('search');
+    }
 }

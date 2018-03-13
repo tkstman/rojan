@@ -20,3 +20,9 @@ Route::get('/contact', [
   'uses'=> 'UserController@getContact',
   'as'=> 'contact'
 ]);
+
+
+Route::get('/search', [
+  'uses'=> 'UserController@getSearch',
+  'as'=> 'search'
+]);
