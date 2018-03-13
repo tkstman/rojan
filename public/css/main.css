@@ -258,3 +258,118 @@
 .card.mb-3.box-shadow:focus a .card-img-top.shadowed:before {
   display: block;
 }
+
+#gw-quick-look-btn {
+    /* display: none; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 7px;
+    margin: auto;
+    width: 95%;
+    max-width: 180px;
+}
+
+.a-button {
+    background: #e7e9ec;
+    border-radius: 3px;
+    border-color: #ADB1B8 #A2A6AC #8D9096;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+    text-decoration: none!important;
+    vertical-align: middle;
+}
+
+
+.a-button .a-button-inner {
+    background: #eff1f3;
+    background: -webkit-linear-gradient(top,#f7f8fa,#e7e9ec);
+    background: linear-gradient(to bottom,#f7f8fa,#e7e9ec);
+}
+
+.a-button:hover .a-button-inner {
+    background: #b9b9b9;
+    background: -webkit-linear-gradient(top,#f7f8fa,#b9b9b9);
+    background: linear-gradient(to bottom,#f7f8fa,#b9b9b9);
+}
+
+.a-button-inner {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 29px;
+    box-shadow: 0 1px 0 rgba(255,255,255,.6) inset;
+    border-radius: 2px;
+}
+
+.a-button:focus, .a-button:active {
+    outline: 0;
+    border-color: #f3513f;
+    box-shadow: 0 0 3px 2px rgba(253, 81, 63, 0.66);
+}
+
+.a-button:active, .a-button:active:hover {
+    border-color: #adb1b8 #a2a6ac #a2a6ac;
+}
+
+.a-button:active .a-button-inner {
+    background-color: #dcdfe3;
+}
+.a-button:active .a-button-inner {
+    box-shadow: 0 1px 3px rgba(0,0,0,.2) inset;
+    background-color: #e7e9ec;
+    background-image: none;
+}
+
+.a-button-input {
+    position: absolute;
+    background-color: transparent;
+    color: transparent;
+    border: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: .01;
+    outline: 0;
+    overflow: visible;
+    z-index: 20;
+}
+input, select, textarea {
+    -webkit-transition: all 1.1s linear;
+    transition: all 1.1s linear;
+    line-height: 19px;
+    color: #111;
+}
+button, input, select, textarea {
+    font-family: inherit;
+}
+button, input {
+    line-height: normal;
+}
+button, input, select, textarea {
+    margin: 0;
+    font-size: 100%;
+    vertical-align: middle;
+}
+
+.a-button .a-button-text {
+    color: #111;
+}
+.a-button-text {
+    background-color: transparent;
+    border: 0;
+    display: block;
+    font-size: 13px;
+    line-height: 29px;
+    margin: 0;
+    outline: 0;
+    padding: 0 10px 0 11px;
+    text-align: center;
+    white-space: nowrap;
+}
