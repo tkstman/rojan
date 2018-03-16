@@ -22,6 +22,7 @@
         @yield('content')
         @include('includes.modalContact')
         @include('includes.modalAbout')
+        @yield('modalQuickLook')
     </div>
     @include('includes.footer')
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
@@ -36,6 +37,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- scrollSpy plugin see https://github.com/thesmart/jquery-scrollspy -->
     <script src="https://gitcdn.xyz/repo/thesmart/jquery-scrollspy/0.1.3/scrollspy.js"></script>
+    
     <script src="{{URL::to('js/wow.min.js')}}"></script>
     <script src="{{URL::to('js/main.js')}}"></script>
     <script>

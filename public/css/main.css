@@ -147,7 +147,7 @@
   background-color: #381005c9;
 }
 
-.modal-dialog
+.modal-dialog.page
 {
   height: 100%;
   width: 100%;
@@ -155,39 +155,75 @@
   margin: 0;
 }
 
-.modal-content
+.modal-content.page
 {
   height: 100%;
   width: 100%;
   background-color:transparent;
 }
 
-.modal-title
+.modal-title.page
 {
   font-family: Garamond;
   font-size: 50px;
 }
 
-.modal-body
+.modal-body.page
 {
     font-family: Avenir Roman;
     font-size: 16px;
 }
 
-.modal-body, .form-control
+.modal-body.page, .form-control
 {
   border-radius: 0;
 }
 
-.modal-body h4, h5, .close
+.modal-body.page h4, h5, .close
 {
   color:white;
 }
 
-.modal-body label
+.modal-body.page label
 {
   color:#93918e;
 }
+
+.modal-header .close.tks {
+     padding: 0;
+     padding-right:5px;
+     font-size: 3.5rem;
+     color:black;
+}
+
+.modal-header .close.tks:hover {
+     color:#adadad;
+}
+
+.modal-footer.tks {
+  border-top: 0.1px solid #f7f7f7;
+}
+
+.modal-header.tks {
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 255);
+
+}
+
+.noSelect:focus,active
+{
+  outline: none !important;
+}
+
 
 #sendContactBtn
 {

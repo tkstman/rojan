@@ -112,3 +112,9 @@
 </div>
 
 @endsection
+
+@section('modalQuickLook')
+<div>
+  @include('includes.quicklookmodal')
+</div>
+@endsection

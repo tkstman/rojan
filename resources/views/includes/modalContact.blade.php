@@ -1,14 +1,14 @@
 <!-- MODAL STRUCTURE -->
 <div class="modal" id="contact_modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Contact Us</h5>
+  <div class="modal-dialog page" role="document">
+    <div class="modal-content page">
+      <div class="modal-header page">
+        <h5 class="modal-title page">Contact Us</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body page">
         <div class="container contact">
           <div class="row">
             <div class="col-sm">

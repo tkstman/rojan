@@ -36,4 +36,11 @@ $('.close').on('click', function(){
   $(this).parent().parent().parent().parent().attr("style","visibility: visible; animation-name: fadeIn;");
 })
 
+$(function() {
+    $(document).on('click', '#gw-quick-look-btn', function() {
+       $('#quicklookmodalct').modal('show');
+    });
+});
+
+
 //$('')
