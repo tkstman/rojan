@@ -26,7 +26,21 @@
             </a>
           </div>
           <div class="col">
+            <div class="quickDetails">
+              <div class="manufacturerName">
+                Testing Manufacturer
+              </div>
+              <a class="productName" href="gooogle">
+                Testing Name Of Product
+              </a>
+              <div class="description">
 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+              <div>
+                <button class="a-button a-button-primary a-button-inner">See All Product Details</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
