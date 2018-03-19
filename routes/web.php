@@ -26,3 +26,8 @@ Route::get('/search', [
   'uses'=> 'UserController@getSearch',
   'as'=> 'search'
 ]);
+
+Route::get('/product', [
+  'uses'=> 'UserController@getProduct',
+  'as'=> 'product'
+]);

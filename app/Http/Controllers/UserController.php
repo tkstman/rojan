@@ -21,4 +21,9 @@ class UserController extends Controller
     {
        return view('search');
     }
+
+    public function getProduct()
+    {
+      return view('product');
+    }
 }

@@ -84,6 +84,10 @@
   color:white;
 }
 
+a:hover{
+  text-decoration: none;
+}
+
 .black-out
 {
   background-color:#26323e;
@@ -531,4 +535,37 @@ li.nav-item:hover a.nav-link:before, li.nav-item:hover a.nav-link:after {
     overflow: hidden;
     color: #9c9898!important;
     text-align: left;
+}
+
+.leftImgPn
+{
+  list-style-type: none;
+  padding-left:10px;
+}
+
+.panelImg
+{
+  height:45px;
+  width:45px;
+}
+
+.leftImgPnContainer
+{
+
+  float:left;
+  position:relative;
+  min-height: 1px;
+}
+
+.imgCnt
+{
+  border: 1px solid #ffe8e8;
+  margin-bottom:2px;
+}
+
+.rightImgPnContainer
+{
+  position:relative;
+  float:right;
+  min-height:1px;
 }
