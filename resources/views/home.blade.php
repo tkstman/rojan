@@ -13,7 +13,7 @@
     <div class="col-md-3 wow fadeIn">
         <div class="card mb-3 box-shadow ">
           <a>
-            <img class="card-img-top shadowed" data-src="" style="height: 225px; width:100%; display:block;"
+            <img class="card-img-top shadowed" title="Jamers Mini ToolKit With Screw Driver And Rachet" data-src="" style="height: 225px; width:100%; display:block;"
             src="img/tools/1.jpg" data-holder-rendered="true">
           </a>
         </div>
@@ -94,7 +94,7 @@
     <div class="col-md-3 wow fadeIn">
         <div class="card mb-3 box-shadow">
           <a>
-            <img class="card-img-top shadowed" data-src="" style="height: 225px; width:100%; display:block;"
+            <img class="card-img-top shadowed" title="" data-src="" style="height: 225px; width:100%; display:block;"
             src="https://image.freepik.com/free-photo/cute-cat-picture_1122-449.jpg" data-holder-rendered="true">
           </a>
         </div>

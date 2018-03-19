@@ -36,9 +36,14 @@ $('.close').on('click', function(){
   $(this).parent().parent().parent().parent().attr("style","visibility: visible; animation-name: fadeIn;");
 })
 
+//TRIGGER QUICK LOOK MODAL
 $(function() {
     $(document).on('click', '#gw-quick-look-btn', function() {
-       $('#quicklookmodalct').modal('show');
+      //POPULATE QUICK LOOK MODAL
+      console.log('hi');
+      $('#quicklookmodalct').find('.card-img-top.shadowed').attr('src',$(this).parent().find('.card-img-top.shadowed').attr('src'));  // take the image source
+      $('#quicklookmodalct').find('.card-img-top.shadowed').attr('title',$(this).parent().find('.card-img-top.shadowed').attr('title'));
+      $('#quicklookmodalct').modal('show');
     });
 });
 
