@@ -204,6 +204,10 @@ a:hover{
      color:#adadad;
 }
 
+.close:focus{
+  outline-width: 0;
+}
+
 .modal-footer.tks {
   border-top: 0.1px solid #f7f7f7;
 }
@@ -568,4 +572,15 @@ li.nav-item:hover a.nav-link:before, li.nav-item:hover a.nav-link:after {
   position:relative;
   float:right;
   min-height:1px;
+  /* max-width: 320px; */
+
+}
+
+.mainImg{
+  max-width: 320px;
+}
+
+.col.left
+{
+    min-width:408px;
 }

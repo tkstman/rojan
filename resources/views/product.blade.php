@@ -27,7 +27,8 @@
           </li>
         </ul>
       </div>
-      <div class="leftImgPnContainer">
+      <div class="rightImgPnContainer">
+        <img class="mainImg" src="img/tools/10.jpg" alt="text-image"/>
       </div>
     </div>
     <div class="col middle">

@@ -10,7 +10,7 @@
 </div>
 <div class="container">
   <div class="row latest">
-    <div class="col-md-3 wow fadeIn">
+    <div class="col-md-2 wow fadeIn">
         <div class="card mb-3 box-shadow ">
           <a>
             <img class="card-img-top shadowed" title="Jamers Mini ToolKit With Screw Driver And Rachet" data-src="" style="height: 225px; width:100%; display:block;"
@@ -18,7 +18,7 @@
           </a>
         </div>
     </div>
-    <div class="col-md-3 wow fadeIn">
+    <div class="col-md-2 wow fadeIn">
         <div class="card mb-3 box-shadow">
           <a>
             <img class="card-img-top shadowed" data-src="" style="height: 225px; width:100%; display:block;"
@@ -26,7 +26,7 @@
           </a>
         </div>
     </div>
-    <div class="col-md-3 wow fadeIn">
+    <div class="col-md-2 wow fadeIn">
         <div class="card mb-3 box-shadow">
           <a>
             <img class="card-img-top shadowed" data-src="" style="height: 225px; width:100%; display:block;"
@@ -34,7 +34,7 @@
           </a>
         </div>
     </div>
-    <div class="col-md-3 wow fadeIn">
+    <div class="col-md-2 wow fadeIn">
         <div class="card mb-3 box-shadow">
           <a>
             <img class="card-img-top shadowed" data-src="" style="height: 225px; width:100%; display:block;"
@@ -43,7 +43,7 @@
         </div>
     </div>
 
-    <div class="col-md-3 wow fadeIn">
+    <div class="col-md-2 wow fadeIn">
         <div class="card mb-3 box-shadow">
           <a>
             <img class="card-img-top shadowed" data-src="" style="height: 225px; width:100%; display:block;"
@@ -51,7 +51,7 @@
           </a>
         </div>
     </div>
-    <div class="col-md-3 wow fadeIn">
+    <div class="col-md-2 wow fadeIn">
         <div class="card mb-3 box-shadow">
           <a>
             <img class="card-img-top shadowed" data-src="" style="height: 225px; width:100%; display:block;"
@@ -59,7 +59,7 @@
           </a>
         </div>
     </div>
-    <div class="col-md-3 wow fadeIn">
+    <div class="col-md-2 wow fadeIn">
         <div class="card mb-3 box-shadow">
           <a>
             <img class="card-img-top shadowed" data-src="" style="height: 225px; width:100%; display:block;"
@@ -67,7 +67,7 @@
           </a>
         </div>
     </div>
-    <div class="col-md-3 wow fadeIn">
+    <div class="col-md-2 wow fadeIn">
         <div class="card mb-3 box-shadow">
           <a>
             <img class="card-img-top shadowed" data-src="" style="height: 225px; width:100%; display:block;"
@@ -75,7 +75,7 @@
           </a>
         </div>
     </div>
-    <div class="col-md-3 wow fadeIn">
+    <div class="col-md-2 wow fadeIn">
         <div class="card mb-3 box-shadow">
           <a>
             <img class="card-img-top shadowed" data-src="" style="height: 225px; width:100%; display:block;"
@@ -83,7 +83,7 @@
           </a>
         </div>
     </div>
-    <div class="col-md-3 wow fadeIn">
+    <div class="col-md-2 wow fadeIn">
         <div class="card mb-3 box-shadow">
           <a>
             <img class="card-img-top shadowed" data-src="" style="height: 225px; width:100%; display:block;"
@@ -91,7 +91,7 @@
           </a>
         </div>
     </div>
-    <div class="col-md-3 wow fadeIn">
+    <div class="col-md-2 wow fadeIn">
         <div class="card mb-3 box-shadow">
           <a>
             <img class="card-img-top shadowed" title="" data-src="" style="height: 225px; width:100%; display:block;"
@@ -99,7 +99,7 @@
           </a>
         </div>
     </div>
-    <div class="col-md-3 wow fadeIn">
+    <div class="col-md-2 wow fadeIn">
         <div class="card mb-3 box-shadow">
           <a>
             <img class="card-img-top shadowed" data-src="" style="height: 225px; width:100%; display:block;"
