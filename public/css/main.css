@@ -477,7 +477,7 @@ button, input, select, textarea {
 
 
 .a-button-primary {
-    background: #f0c14b;
+    background: #fd523f;
     border-color: #a88734 #9c7e31 #846a29;
     color: #111
   }
@@ -588,7 +588,7 @@ li.nav-item:hover a.nav-link:before, li.nav-item:hover a.nav-link:after {
 
 .manufacturer-prod-page a, .manufacturer-name
 {
-  color: #0066c0!important;
+  color: #fd523f!important;
 }
 
 .productName
@@ -612,7 +612,7 @@ li.nav-item:hover a.nav-link:before, li.nav-item:hover a.nav-link:after {
 
 .manufacturer-name:hover
 {
-    text-decoration: underline;
+    text-decoration: underline!important;
 }
 
 .spacer
@@ -715,4 +715,17 @@ font-size:14px;
 .row.latest .col
 {
   padding-top:38px;
+}
+
+.prod-list
+{
+  min-height:750px;
+}
+
+.cnt-prod{
+  margin-bottom: 10px!important;
+  font-size: 13px;
+  line-height: 19px;
+  color: #111;
+  font-family: Arial,sans-serif;
 }

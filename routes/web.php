@@ -31,3 +31,8 @@ Route::get('/product', [
   'uses'=> 'UserController@getProduct',
   'as'=> 'product'
 ]);
+
+Route::get('/account', [
+  'uses'=> 'UserController@getAccount',
+  'as'=> 'account'
+]);
