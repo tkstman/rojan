@@ -734,3 +734,65 @@ footer a
 {
   color:#fd523f;
 }
+
+.list-header.col-sm
+{
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  padding: 0;
+    margin: 0;
+}
+
+.a-icon{
+  background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_1x-c4a765a…._V2_.png);
+  -webkit-background-size: 400px 750px;
+  background-size: 400px 750px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.a-icon-section-collapse, .a-icon-section-expand {
+    width: 15px;
+    height: 12px;
+    opacity: .64;
+    position: relative;
+}
+
+a.a-link-section-expander .a-icon-section-collapse, a.a-link-section-expander .a-icon-section-expand {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    margin: 0;
+    margin-top: -6px;
+}
+
+.a-icon-section-expand {
+    background-position: -5px -59px;
+}
+
+.a-icon-section-collapse {
+    background-position: -5px -82px;
+}
+
+.row.account
+{
+  margin-left: 0;
+}
+
+.table-dark.account {
+    background-color: #461111;
+}
+
+.table-dark.account thead {
+    background-color: #c30000;
+}
+
+.table-dark.account th {
+    border-color: #ff0000;
+}
+
+.table-dark.account td{
+    border-color: #ff0000;
+}
