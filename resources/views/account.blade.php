@@ -10,7 +10,7 @@
     <div class="col">
 
     </div>
-    <div class="col-6 prod-list">
+    <div class="col-10 prod-list">
       <form>
       <div class="cnt-prod">
         <div class="a-spacing-small">
@@ -28,6 +28,17 @@
                 One of three columns
               </div>
           </div> -->
+          <div class="addProdCnt">
+            <div class="addProdBox">
+              <div class="addProdInner">
+                <div class="icon">
+                </div>
+                <h7 class="addProdText">Add Product</h7>
+              </div>
+
+            </div>
+          </div>
+
           <table class="table table-hover table-dark account">
             <thead>
               <tr>
@@ -44,10 +55,10 @@
                 <td>Mark</td>
                 <td>Otto</td>
                 <td>@mdo</td>
-                <td>
+                <td class="changeEle">
                   <span>
-                    <input class="a-button a-button-primary a-button-inner" type="submit"/>
-                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                    <input  value="Edit" type="button" class="btn btn-outline-dark edit"/>
+                    <input  value="Delete" type="button" class="btn btn-outline-dark edit"/>
                   </span>
                 </td>
               </tr>

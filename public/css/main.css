@@ -796,3 +796,65 @@ a.a-link-section-expander .a-icon-section-collapse, a.a-link-section-expander .a
 .table-dark.account td{
     border-color: #ff0000;
 }
+
+.btn-outline-dark.edit
+{
+  background-color: white;
+  font-size: inherit;
+  line-height: initial;
+  min-width:64px;
+}
+
+.btn-outline-dark.edit:hover
+{
+  background-color: #343a40;
+}
+
+.changeEle
+{
+  text-align: center;
+  width: 190px;
+}
+
+.addProdBox
+{
+    border-style: dashed;
+    height: 45px;
+    width: 200px;
+    border-width: 2px;
+    box-sizing: border-box;
+    border-color: #ff1010;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 700;
+    color: #767676!important;
+    /* background: linear-gradient(to right, #ff9797, #ff5454,red , #ff5454,#ff9797); */
+
+}
+
+.addProdBox:hover{
+  cursor: pointer;
+  border-color:#ffaaaa;
+  color:white!important;
+  background-color:#ffaaaa;
+  transition: background-color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.addProdBox:active,focus{
+  cursor: pointer;
+  border-color:#ca5e5e;
+  color:white!important;
+  background-color:#ca5e5e;
+  transition: background-color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.addProdCnt
+{
+  margin-bottom: 10px;
+}
+
+.addProdText
+{
+
+}
