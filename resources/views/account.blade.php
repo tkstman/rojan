@@ -7,27 +7,13 @@
 @section('content')
 <div class="container">
   <div class="row latest">
-    <div class="col">
+    {{-- <div class="col">
 
-    </div>
-    <div class="col-10 prod-list">
+    </div> --}}
+    <div class="col prod-list accounting">
       <form>
       <div class="cnt-prod">
         <div class="a-spacing-small">
-          <!-- <div class="row account">
-              <div class="col-sm list-header">
-                One of three columns
-              </div>
-              <div class="col-sm list-header">
-                One of three columns
-              </div>
-              <div class="col-sm list-header">
-                One of three columns
-              </div>
-              <div class="col-sm list-header">
-                One of three columns
-              </div>
-          </div> -->
           <div class="addProdCnt">
             <div class="addProdBox">
               <div class="addProdInner">
@@ -58,7 +44,7 @@
                 <td class="changeEle">
                   <span>
                     <input  value="Edit" type="button" class="btn btn-outline-dark edit"/>
-                    <input  value="Delete" type="button" class="btn btn-outline-dark edit"/>
+                    <input  value="Delete" type="button" class="btn btn-outline-dark delete"/>
                   </span>
                 </td>
               </tr>
@@ -67,11 +53,23 @@
                 <td>Jacob</td>
                 <td>Thornton</td>
                 <td>@fat</td>
+                <td class="changeEle">
+                  <span>
+                    <input  value="Edit" type="button" class="btn btn-outline-dark edit"/>
+                    <input  value="Delete" type="button" class="btn btn-outline-dark delete"/>
+                  </span>
+                </td>
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td colspan="2">Larry the Bird</td>
                 <td>@twitter</td>
+                <td class="changeEle">
+                  <span>
+                    <input  value="Edit" type="button" class="btn btn-outline-dark edit"/>
+                    <input  value="Delete" type="button" class="btn btn-outline-dark delete"/>
+                  </span>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -79,10 +77,17 @@
       </div>
       </form>
     </div>
-    <div class="col">
+    {{-- <div class="col">
 
-    </div>
+    </div> --}}
   </div>
 </div>
 
+@endsection
+
+@section('modalQuickLook')
+<div>
+  @include('includes.modalAddProduct')
+  @include('includes.modalEditProduct')
+</div>
 @endsection

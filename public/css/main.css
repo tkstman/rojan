@@ -782,11 +782,14 @@ a.a-link-section-expander .a-icon-section-collapse, a.a-link-section-expander .a
 }
 
 .table-dark.account {
-    background-color: #461111;
+    background-image: url(http://www.hdrlabs.com/gallery/realhdr/media/KitchenWindow_PM_DetailsEnhancer.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .table-dark.account thead {
-    background-color: #c30000;
+    background-color: #c300006b;
 }
 
 .table-dark.account th {
@@ -797,7 +800,12 @@ a.a-link-section-expander .a-icon-section-collapse, a.a-link-section-expander .a
     border-color: #ff0000;
 }
 
-.btn-outline-dark.edit
+.table-dark.account tr
+{
+  background-color:#00000094;
+}
+
+.btn-outline-dark.edit,.btn-outline-dark.delete
 {
   background-color: white;
   font-size: inherit;
@@ -805,7 +813,7 @@ a.a-link-section-expander .a-icon-section-collapse, a.a-link-section-expander .a
   min-width:64px;
 }
 
-.btn-outline-dark.edit:hover
+.btn-outline-dark.edit:hover ,.btn-outline-dark.delete:hover
 {
   background-color: #343a40;
 }
@@ -857,4 +865,21 @@ a.a-link-section-expander .a-icon-section-collapse, a.a-link-section-expander .a
 .addProdText
 {
 
+}
+
+#quicklookmodalEditProd .modal-content, #quicklookmodalAddProd .modal-content
+{
+   background-color: #e28177ed;
+   color: white;
+}
+
+#quicklookmodalEditProd form, #quicklookmodalAddProd form
+{
+  width:100%;
+}
+
+.col.prod-list.accounting
+{
+  padding-top: 0px!important;
+  padding-right:0px!important;
 }
