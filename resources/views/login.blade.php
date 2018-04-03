@@ -5,8 +5,8 @@
 @endsection
 
 @section('content')
-    <div class="row">
-      <div class="col">
+    <div class="row login">
+      <div class="col login">
           <div class="login-container">
             <form action="#" method="post">
               <div class="form-group">

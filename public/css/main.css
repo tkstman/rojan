@@ -883,3 +883,28 @@ a.a-link-section-expander .a-icon-section-collapse, a.a-link-section-expander .a
   padding-top: 0px!important;
   padding-right:0px!important;
 }
+
+.login-container
+{
+  width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #d0d0d0;
+    margin-top: 10%;
+    margin-bottom: 10px;
+}
+
+.col.login
+{
+  background-color: #ff6a59a1;
+}
+
+.row.login
+{
+    background-image: url(http://www.hdrlabs.com/gallery/realhdr/media/KitchenWindow_PM_DetailsEnhancer.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 750px;
+}
