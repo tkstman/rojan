@@ -35,9 +35,16 @@ Route::get('/product', [
 Route::get('/account', [
   'uses'=> 'UserController@getAccount',
   'as'=> 'account'
+  // ,
+  // 'middleware' => 'auth'
 ]);
 
 Route::get('/login', [
   'uses'=> 'UserController@getLogin',
   'as'=> 'login'
+]);
+
+Route::post('/loginAttempt',[
+  'uses' => 'UserController@postLogin',
+  'as'=> 'loginAttempt'
 ]);

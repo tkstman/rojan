@@ -5,13 +5,13 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
+
 class User extends Authenticatable
 {
+    // use Illuminate\Contracts\Auth\Authenticatable;
     use Notifiable;
 
     protected $primaryKey = 'user_id';
-    public $timestamps = false;
-    protected $table = 'user';
 
     /**
      * The attributes that are mass assignable.
@@ -19,7 +19,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'user_name', 'email', 'password',
     ];
 
     /**

@@ -233,11 +233,21 @@ a:hover{
 }
 
 
-#sendContactBtn
+#sendContactBtn, #login_submit
 {
   border-radius:0;
   background-color: #007bff00;
   border-color:#f8f9fa9e;
+}
+
+#login_submit
+{
+  color:white;
+}
+
+#login_submit:hover
+{
+  background-color: #ffffff54;
 }
 
 .close, #sendContactBtn:hover
@@ -845,7 +855,7 @@ a.a-link-section-expander .a-icon-section-collapse, a.a-link-section-expander .a
   cursor: pointer;
   border-color:#ffaaaa;
   color:white!important;
-  background-color:#ffaaaa;
+  background-color:#fd523f;
   transition: background-color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
@@ -869,7 +879,7 @@ a.a-link-section-expander .a-icon-section-collapse, a.a-link-section-expander .a
 
 #quicklookmodalEditProd .modal-content, #quicklookmodalAddProd .modal-content
 {
-   background-color: #ea2814ba;
+   background-color: #f75646bd;
    color: white;
 }
 
@@ -887,17 +897,18 @@ a.a-link-section-expander .a-icon-section-collapse, a.a-link-section-expander .a
 .login-container
 {
   width: 500px;
-    height: 200px;
+    height: 240px;
     margin: 0 auto;
     padding: 10px;
-    border: 1px solid #d0d0d0;
+    border: 2px solid #d0d0d0;
     margin-top: 10%;
     margin-bottom: 10px;
+    color:white;
 }
 
 .col.login
 {
-  background-color: #ff6a59a1;
+  background-color: #f75646bd;
 }
 
 .row.login
