@@ -901,7 +901,7 @@ a.a-link-section-expander .a-icon-section-collapse, a.a-link-section-expander .a
     margin: 0 auto;
     padding: 10px;
     border: 2px solid #d0d0d0;
-    margin-top: 10%;
+    /* margin-top: 10%; */
     margin-bottom: 10px;
     color:white;
 }
@@ -918,4 +918,16 @@ a.a-link-section-expander .a-icon-section-collapse, a.a-link-section-expander .a
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 750px;
+}
+
+.spacing-row
+{
+  min-height:64px;
+}
+
+.spacing-row  .row .col ul
+{
+
+  margin: 0 auto;
+  width:500px;
 }

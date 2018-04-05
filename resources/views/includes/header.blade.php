@@ -48,6 +48,13 @@
       <li class="nav-item active about_page">
         <a class="nav-link" href="#">About</a>
       </li>
+
+      @if(Request::is('account') )
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Logout</a>
+      </li>
+      @endif
+
     </ul>
 
   </div>

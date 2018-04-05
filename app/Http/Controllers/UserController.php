@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\User;
 
 
 
@@ -42,15 +43,33 @@ class UserController extends Controller
 
     public function postLogin(Request $request)
     {
-        $username = $request['username'];
-        $password = bcrypt($request['password']);
+        $this->validate($request,[
+          'username' =>'required',
+          'password' =>'required|min:4|max:71'
+        ]);
 
-        if(Auth::attempt(['user_name'=>$username,'password'=>bcrypt($password)]))
+        $username = trim($request['username']);
+        $password = $request['password'];
+
+        $user = User::where('user_name',$username)->first();
+
+        if(password_verify($password,$user->password)) //'$2y$05$4oH0br87feNt8NDQ8pUv2e1cNKHhp39RM0SLaGMh3w.Iqwm6cjdfq'
         {
-          return redirect()->route('account');
+          //Check if user is active state 1 else prevent login
+          if($user->active == 1)
+          {
+              Auth::login($user);
+              return redirect()->route('account');
+          }
+          else if($user->active ==0)
+          {
+            //User has not been activated
+          }
+          else if($user->active ==2)
+          {
+            //User was fired and removed
+          }
         }
-         echo bcrypt($password); //redirect()->back()->with(['value'=>bcrypt($password)]);
-
-
+        return redirect()->back();
     }
 }
