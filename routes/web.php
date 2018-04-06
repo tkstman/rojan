@@ -34,14 +34,19 @@ Route::get('/product', [
 
 Route::get('/account', [
   'uses'=> 'UserController@getAccount',
-  'as'=> 'account'
+  'as'=> 'account',
   // ,
-  // 'middleware' => 'auth'
+  'middleware' => 'auth'
 ]);
 
 Route::get('/login', [
   'uses'=> 'UserController@getLogin',
   'as'=> 'login'
+]);
+
+Route::get('/logout', [
+  'uses'=> 'UserController@getLogOut',
+  'as'=> 'logout'
 ]);
 
 Route::post('/loginAttempt',[

@@ -41,35 +41,44 @@ class UserController extends Controller
       return view('login');
     }
 
+    public function getLogOut()
+    {
+      Auth::logout();
+      return redirect()->back();
+    }
+
     public function postLogin(Request $request)
     {
-        $this->validate($request,[
-          'username' =>'required',
-          'password' =>'required|min:4|max:71'
-        ]);
+      $this->validate($request,[
+        'username' =>'required',
+        'password' =>'required|min:4|max:71'
+      ]);
 
-        $username = trim($request['username']);
-        $password = $request['password'];
+      $username = trim($request['username']);
+      $password = $request['password'];
 
-        $user = User::where('user_name',$username)->first();
+      $user = User::where('user_name',$username)->first();
 
-        if(password_verify($password,$user->password)) //'$2y$05$4oH0br87feNt8NDQ8pUv2e1cNKHhp39RM0SLaGMh3w.Iqwm6cjdfq'
+      if(password_verify($password,$user->password)) //'$2y$05$4oH0br87feNt8NDQ8pUv2e1cNKHhp39RM0SLaGMh3w.Iqwm6cjdfq'
+      {
+        //Check if user is active state 1 else prevent login
+        if($user->active == 1)
         {
-          //Check if user is active state 1 else prevent login
-          if($user->active == 1)
-          {
-              Auth::login($user);
-              return redirect()->route('account');
-          }
-          else if($user->active ==0)
-          {
-            //User has not been activated
-          }
-          else if($user->active ==2)
-          {
-            //User was fired and removed
-          }
+            Auth::login($user);
+            return redirect()->route('account');
         }
-        return redirect()->back();
+        else if($user->active ==0)
+        {
+          //User has not been activated
+        }
+        else if($user->active ==2)
+        {
+          //User was fired and removed
+        }
+      }
+      return redirect()->back();
     }
+
+
+
 }

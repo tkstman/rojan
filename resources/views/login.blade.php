@@ -32,11 +32,11 @@
             <form action="{{route('loginAttempt')}}" method="post">
               <div class="form-group">
                 <label for="username">User Name:</label>
-                <input class="form-control" type="text" name="username" id="username" value="{{Request::old('email')}}"/>
+                <input class="form-control {{$errors->has('username') ? 'has-error' :  ''}}" type="text" name="username" id="username" value="{{Request::old('email')}}"/>
               </div>
               <div class="form-group">
                 <label for="password">Password:</label>
-                <input class="form-control" type="password" name="password" id="password" />
+                <input class="form-control {{$errors->has('password') ? 'has-error' :  ''}}" type="password" name="password" id="password" />
               </div>
               <button type="submit" class="btn a-button-primary" id="login_submit">Submit</button>
               {{Form::token()}}

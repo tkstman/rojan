@@ -51,9 +51,15 @@
 
       @if(Request::is('account') )
       <li class="nav-item active">
-        <a class="nav-link" href="#">Logout</a>
+        <a class="nav-link" href="/logout">Logout</a>
       </li>
       @endif
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#">
+          <!-- {{App\User::reserved_ip(Request::ip())}} -->
+        </a>
+      </li>
 
     </ul>
 
