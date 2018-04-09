@@ -931,3 +931,8 @@ a.a-link-section-expander .a-icon-section-collapse, a.a-link-section-expander .a
   margin: 0 auto;
   width:500px;
 }
+
+.height-inherit
+{
+  height: inherit;
+}
