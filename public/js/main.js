@@ -79,6 +79,14 @@ $('.btn.btn-outline-secondary.dropdown-toggle').on('focusout', function(){
 //PRODUCT ADDING SECTION
 
 /*
+
+*/
+function clearError()
+{
+  $(".right-error").text("");
+}
+
+/*
   ADD IMAGE BUTTON CLICK
 */
 $(function() {
@@ -94,25 +102,27 @@ $(function() {
   }
   else {
     //report max number reached error
-    $(".right-error").focus();
     $(".right-error").text("Maximum Of 5 Images May Be Added For A Product");
-    $(".right-error").focus();
+
+    setTimeout(clearError,5000);
   }
 });
 });
 
 
-$(function(){
-  $(document).on('focus',".right-error", function(){
-    console.log('focus out');
-    $(".right-error").text("");
-  });
-});
+
+// $(function(){
+//   $(document).on('active',".row", function(){
+//     console.log('focus out');
+//
+//   });
+// });
 
 
 /*
   REMOVE IMAGE BUTTON CLICK
 */
+
 $(function() {
   $(document).on('click','.minusPic', function() {
     var countOfMinProds = $('.input-group.mb-3.adding').length;
