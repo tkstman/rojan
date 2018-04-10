@@ -44,6 +44,7 @@
             </div>
             <div class="form-group addingImages">
                 <label for="app_file">Product Image</label>
+                <label class="right-error"></label>
                 <div class="input-group mb-3 adding">
                    <input class="form-control" type="file" name="app_file" id="app_file">
                     <div class="input-group-append height-inherit minus imgactive">|

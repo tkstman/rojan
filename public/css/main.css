@@ -936,3 +936,11 @@ a.a-link-section-expander .a-icon-section-collapse, a.a-link-section-expander .a
 {
   height: inherit;
 }
+
+.right-error{
+    float: right;
+    color: #000000;
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
