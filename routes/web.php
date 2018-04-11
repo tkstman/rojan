@@ -53,3 +53,8 @@ Route::post('/loginAttempt',[
   'uses' => 'UserController@postLogin',
   'as'=> 'loginAttempt'
 ]);
+
+Route::post('/createProduct',[
+  'uses' =>'ProductController@postAddProduct',
+  'as' => 'product.create'
+]);

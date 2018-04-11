@@ -944,3 +944,8 @@ a.a-link-section-expander .a-icon-section-collapse, a.a-link-section-expander .a
     margin-bottom: 0;
     margin-top: 10px;
   }
+
+  .deptInpt
+  {
+    padding:0;
+  }

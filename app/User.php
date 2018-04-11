@@ -31,7 +31,13 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function role()
+    public function products()
+    {
+      return $this->hasMany('App\Product');
+      //https://laravel.com/docs/5.6/eloquent-relationships
+    }
+
+    public function roles()
     {
         return $this->belongsToMany('App\Role','user_role','user_id','role_id');
     }

@@ -20,7 +20,7 @@
           </div>
         </form> -->
         <div class="row">
-          <form style="margin-top: 20px; margin-bottom: 20px; margin-left: 50px; margin-right: 50px;">
+          <form method="post" action="{{ route('product.create') }}" style="margin-top: 20px; margin-bottom: 20px; margin-left: 50px; margin-right: 50px;">
             <div>
               <h4>Add New Product</h4>
             </div>
@@ -29,6 +29,7 @@
                 <label for="inputProductName">Product Name</label>
                 <input type="text" class="form-control" id="inputProductName" name="inputProductName">
               </div>
+
               <div class="form-group col-md-6">
                 <label for="inputQuantity">Quantity</label>
                 <input type="text" class="form-control" id="inputQuantity" name="inputQuantity">
@@ -38,6 +39,20 @@
               <label for="inputDetails">Product Details </label>
               <textarea rows="4" class="form-control" id="inputDetails" name="inputDetails" placeholder=""></textarea>
             </div>
+            <div class="form-group">
+              <label for="inputDept">Departments</label>
+              <div class="form-group col-md-4 deptInpt" >
+                <select class="form-control" name="inputDept" id="inputDept">
+                  <option>
+                    Plumbing
+                  </option>
+                  <option>
+                    Electrical
+                  </option>
+                </select>
+              </div>
+            </div>
+
             <div class="form-group">
               <label for="inputDescription">Product Description</label>
               <textarea rows="4" name="inputDescription" class="form-control" id="inputDescription"></textarea>
@@ -93,6 +108,7 @@
                 </div>
             </div>
             <button type="submit" class="btn btn-primary" id="sendContactBtn">Add</button>
+            {{Form::token()}}
            </form>
           {{-- <div class="col">
             <a>

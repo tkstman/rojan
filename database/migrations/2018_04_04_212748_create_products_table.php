@@ -19,7 +19,7 @@ class CreateProductsTable extends Migration
             $table->integer('dept_id');
             $table->string('description');
             $table->string('details');
-            $table->integer('quantity');
+            $table->integer('quantity')->nullable();
             $table->integer('audit_user');
             $table->timestamps();
         });

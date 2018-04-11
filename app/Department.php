@@ -9,7 +9,7 @@ class Department extends Model
     protected $primaryKey = 'dept_id';
     protected $table = 'department';
 
-    public function product()
+    public function products()
     {
         return $this->belongsTo('App\Product');
     }
