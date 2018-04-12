@@ -33,8 +33,9 @@ class User extends Authenticatable
 
     public function products()
     {
-      return $this->hasMany('App\Product');
+      return $this->hasMany('App\Product','audit_user','prod_id');
       //https://laravel.com/docs/5.6/eloquent-relationships
+      //http://laraveldaily.com/pivot-tables-and-many-to-many-relationships/
     }
 
     public function roles()

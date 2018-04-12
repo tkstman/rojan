@@ -43,10 +43,10 @@
               <label for="inputDept">Departments</label>
               <div class="form-group col-md-4 deptInpt" >
                 <select class="form-control" name="inputDept" id="inputDept">
-                  <option>
+                  <option value="1">
                     Plumbing
                   </option>
-                  <option>
+                  <option value="2">
                     Electrical
                   </option>
                 </select>

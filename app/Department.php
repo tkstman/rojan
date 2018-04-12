@@ -11,6 +11,6 @@ class Department extends Model
 
     public function products()
     {
-        return $this->belongsTo('App\Product');
+        return $this->hasMany('App\Product','prod_id','dept_id');
     }
 }
