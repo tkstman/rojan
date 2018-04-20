@@ -15,11 +15,21 @@ class ProductController extends Controller
       //Validation
 
       //create post
-      $product = new Product();
-      $product->prod_name = $request['inputProductName'];
-      $product->dept_id = $request['inputDept'];
-      $product->description = $request['inputDescription'];
-      $product->details = $request['inputDetails'];
-      $request->user()->products()->save($product);
+      try {
+        $product = new Product();
+        $product->prod_name = $request['inputProductName'];
+        $product->dept_id = $request['inputDept'];
+        $product->description = $request['inputDescription'];
+        $product->details = $request['inputDetails'];
+        $product->audit_user = $request->user()->user_id;
+        $request->user()->products()->save($product);
+
+        return redirect()->route('account')->with('state');
+
+      } catch (\Exception $e) {
+        return redirect()->route('account')->withError('state');
+      }
+
+
     }
 }
