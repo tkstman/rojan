@@ -32,7 +32,7 @@
             <form action="{{route('loginAttempt')}}" method="post">
               <div class="form-group">
                 <label for="username">User Name:</label>
-                <input class="form-control {{$errors->has('username') ? 'has-error' :  ''}}" type="text" name="username" id="username" value="{{Request::old('email')}}"/>
+                <input class="form-control {{$errors->has('username') ? 'has-error' :  ''}}" type="text" name="username" id="username" value="{{Request::old('username')}}"/>
               </div>
               <div class="form-group">
                 <label for="password">Password:</label>

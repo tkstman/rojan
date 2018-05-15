@@ -51,7 +51,7 @@ class UserController extends Controller
     {
       $this->validate($request,[
         'username' =>'required',
-        'password' =>'required|min:4|max:71'
+        'password' =>'required'
       ]);
 
       $username = trim($request['username']);

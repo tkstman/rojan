@@ -24,7 +24,22 @@
 
             </div>
           </div>
-
+          @section('messages')
+            @include('includes.messages')
+          @endsection
+          @if(count($errors) > 0)
+          <div class="row">
+            <div class="col">
+              <ul>
+                  @foreach($errors->all() as $error)
+                    <li>
+                      {{$error}}
+                    </li>
+                  @endforeach
+              </ul>
+            </div>
+          </div>
+          @endif
           <table class="table table-hover table-dark account">
             <thead>
               <tr>

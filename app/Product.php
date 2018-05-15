@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     //
+    protected $primaryKey = 'prod_id';
+    protected $table = 'products';
+
     public function user()
     {
       return $this->belongsTo('App\User','audit_user','prod_id');

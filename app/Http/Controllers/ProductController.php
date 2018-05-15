@@ -13,9 +13,16 @@ class ProductController extends Controller
     public function postAddProduct(Request $request)
     {
       //Validation
+      $this->validate($request,[
+        'inputProductName'=>'required|unique:products,prod_name',
+        'inputDept'=>'required',
+        'inputDetails'=>'required',
+        'inputDescription'=>'required'
 
+      ]);
       //create post
       try {
+
         $product = new Product();
         $product->prod_name = $request['inputProductName'];
         $product->dept_id = $request['inputDept'];

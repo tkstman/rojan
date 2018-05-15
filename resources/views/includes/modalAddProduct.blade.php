@@ -27,22 +27,22 @@
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputProductName">Product Name</label>
-                <input type="text" class="form-control" id="inputProductName" name="inputProductName">
+                <input type="text" class="form-control" id="inputProductName" name="inputProductName"  value="{{Request::old('inputProductName')}}">
               </div>
 
               <div class="form-group col-md-6">
                 <label for="inputQuantity">Quantity</label>
-                <input type="text" class="form-control" id="inputQuantity" name="inputQuantity">
+                <input type="text" class="form-control" id="inputQuantity" name="inputQuantity"  value="{{Request::old('inputQuantity')}}">
               </div>
             </div>
             <div class="form-group">
               <label for="inputDetails">Product Details </label>
-              <textarea rows="4" class="form-control" id="inputDetails" name="inputDetails" placeholder=""></textarea>
+              <textarea rows="4" class="form-control" id="inputDetails" name="inputDetails" placeholder=""  value="{{Request::old('inputDetails')}}"></textarea>
             </div>
             <div class="form-group">
               <label for="inputDept">Departments</label>
               <div class="form-group col-md-4 deptInpt" >
-                <select class="form-control" name="inputDept" id="inputDept">
+                <select class="form-control" name="inputDept" id="inputDept" >
                   <option value="1">
                     Plumbing
                   </option>
@@ -55,7 +55,7 @@
 
             <div class="form-group">
               <label for="inputDescription">Product Description</label>
-              <textarea rows="4" name="inputDescription" class="form-control" id="inputDescription"></textarea>
+              <textarea rows="4" name="inputDescription" class="form-control" id="inputDescription" value="{{Request::old('inputDescription')}}"></textarea>
             </div>
             <div class="form-group addingImages">
                 <label for="app_file">Product Image</label>
