@@ -9,7 +9,7 @@ class Role extends Model
   //
     protected $primaryKey = 'role_id';
     public $timestamps = false;
-    protected $table = 'role';
+    protected $table = 'roles';
 
     public function user()
     {

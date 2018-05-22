@@ -19,7 +19,7 @@
               <div class="addProdInner">
                 <div class="icon">
                 </div>
-                <h7 class="addProdText">Add Product</h7>
+                <h7 class="addProdText">Add Product {{Auth::user()->roles()->orderBy('role_name')->get()}}</h7>
               </div>
 
             </div>
