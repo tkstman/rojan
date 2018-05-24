@@ -59,3 +59,8 @@ Route::post('/createProduct',[
   'as' => 'product.create',
   'middleware' => 'auth'
 ]);
+
+Route::get('/messageTest', [
+  'uses' => 'ProductController@showMessage',
+  'as' => 'showMessage'
+]);

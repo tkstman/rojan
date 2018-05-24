@@ -20,7 +20,7 @@
           </div>
         </form> -->
         <div class="row">
-          <form method="post" action="{{ route('product.create') }}" style="margin-top: 20px; margin-bottom: 20px; margin-left: 50px; margin-right: 50px;">
+          <form method="post" action="{{ route('product.create') }}" enctype="multipart/form-data" style="margin-top: 20px; margin-bottom: 20px; margin-left: 50px; margin-right: 50px;">
             <div>
               <h4>Add New Product</h4>
             </div>
@@ -61,7 +61,7 @@
                 <label for="app_file">Product Image</label>
                 <label class="right-error"></label>
                 <div class="input-group mb-3 adding">
-                   <input class="form-control" type="file" name="app_file" id="app_file">
+                   <input class="form-control" type="file" name="app_file[]" id="app_file"  >
                     <div class="input-group-append height-inherit minus imgactive">|
                         <div class="input-group-text">
                           <button  type="button" class="minusPic" >

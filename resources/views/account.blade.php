@@ -19,7 +19,8 @@
               <div class="addProdInner">
                 <div class="icon">
                 </div>
-                <h7 class="addProdText">Add Product {{Auth::user()->roles()->orderBy('role_name')->get()}}</h7>
+                <h7 class="addProdText">Add Product </h7>
+                {{-- {{Auth::user()->roles()->orderBy('role_name')->get()}} --}}
               </div>
 
             </div>
@@ -27,15 +28,20 @@
           @section('messages')
             @include('includes.messages')
           @endsection
-          @if(count($errors) > 0)
+          @if(count($errors) > 0 || \Session::has('msg'))
           <div class="row">
             <div class="col">
               <ul>
                   @foreach($errors->all() as $error)
-                    <li>
-                      {{$error}}
-                    </li>
+                      <li class='alert-danger'>
+                        {{$error}}
+                      </li>
                   @endforeach
+                  @if(\Session::has('msg'))
+                    <li class="{{session('errorstatus')==0 ? 'alert-success' : 'alert-danger'}}" >
+                      {{session('msg')}}
+                    </li>
+                  @endif
               </ul>
             </div>
           </div>

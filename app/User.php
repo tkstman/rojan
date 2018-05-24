@@ -34,14 +34,14 @@ class User extends Authenticatable
 
     public function products()
     {
-      return $this->hasMany('App\Product','audit_user','prod_id');
+      return $this->hasMany('App\Product','audit_user','prod_id');//->withTimestamps();
       //https://laravel.com/docs/5.6/eloquent-relationships
       //http://laraveldaily.com/pivot-tables-and-many-to-many-relationships/
     }
 
     public function roles()
     {
-        return $this->belongsToMany('App\Role','user_roles','user_id','role_id');
+        return $this->belongsToMany('App\Role','user_roles','user_id','role_id');//->withTimestamps();
     }
 
     public static function reserved_ip($ip)
