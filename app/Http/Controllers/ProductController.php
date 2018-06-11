@@ -2,14 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use App\Product;
 use App\Image_Photo;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use File;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\DB;
 
 class ProductController extends Controller
 {
   protected $primaryKey = 'prod_id';
   protected $table = 'products';
+  public $main = 'photos/';
 //  private
     //
     public function postAddProduct(Request $request)
@@ -33,6 +39,7 @@ class ProductController extends Controller
 
       $mimeTypes = ['image/jpeg','image/jpg','image/bmp','image/png','image/gif'];
 
+      //Check if Image Mimetypes are in the provided list
       foreach ($request->file('app_file') as $file) {
         if( !in_array($file->getClientMimeType(),$mimeTypes) )
         {
@@ -43,17 +50,43 @@ class ProductController extends Controller
       //create post
       //try {
 
+        //STEPS
+        //Create PRODUCT
+        //Save Product
+        //Create IMAGE
+        //Save Image
+        //Save in Image_Photo
+
         $product = new Product();
         $product->prod_name = $request['inputProductName'];
         $product->dept_id = $request['inputDept'];
         $product->description = $request['inputDescription'];
         $product->details = $request['inputDetails'];
-        $product->audit_user = $request->user()->user_id;
-        $request->user()->products()->save($product);
+
+
+
+        $user_id= DB::table('users')->where('user_id', Auth::user()->user_id)->value('user_id');
+        $user = User::find($user_id);
+
+        $product->audit_user = Auth::user()->user_id;
+//Auth::user()->user_id
+        $product->save();
+        //return redirect()->route('account')->with(['msg'=>$product->audit_user,'errorstatus'=>0]);
+
         $img_phot = new Image_Photo();
-        $img_phot->img_path='photos/'.$request->file('app_file')[0]->getClientOriginalName();
+
+        $appDestinationPath = $this->main;
+        $appFile = $request->file('app_file')[0];
+        $appFileName = $request->file('app_file')[0]->getClientOriginalName();
+        $appFileSaveLoc = rand(111111, 999999). $appFileName;
+        $appFile->move($appDestinationPath, $appFileSaveLoc);
+
+        $img_phot->img_path=$appFileSaveLoc;//=$this->main . $request->file('app_file')[0]->getClientOriginalName();
         $img_phot->img_name=$request->file('app_file')[0]->getClientOriginalName();
-        $product->Image_Photo()->attach($img_phot);
+        $img_phot->audit_user = Auth::user()->user_id;
+
+        $img_phot->save();
+        $product->Image_Photo()->attach($img_phot,['priority' => 1,'audit_user' => $product->audit_user]);
 
         return redirect()->route('account')->with(['msg'=>'Successfully Added Product','errorstatus'=>0]);
 

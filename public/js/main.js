@@ -50,6 +50,9 @@ $(function() {
 //TRIGGER QUICK LOOK ADD PRODUCT MODAL
 $(function() {
     $(document).on('click', '.addProdBox', function() {
+      //CLEAR PREVIOUS ERRORS
+      $('.errors-rojan').remove();
+
       //POPULATE QUICK LOOK MODAL
       console.log('hi');
     //  $('#quicklookmodalAddProd').find('.card-img-top.shadowed').attr('src',$(this).parent().find('.card-img-top.shadowed').attr('src'));  // take the image source

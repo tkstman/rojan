@@ -29,7 +29,7 @@
             @include('includes.messages')
           @endsection
           @if(count($errors) > 0 || \Session::has('msg'))
-          <div class="row">
+          <div class="row errors-rojan">
             <div class="col">
               <ul>
                   @foreach($errors->all() as $error)

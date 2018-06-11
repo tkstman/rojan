@@ -18,7 +18,7 @@ class Product extends Model
 
     public function Image_Photo()
     {
-      return $this->hasMany('App\Image_Photo','img_id','prod_id');//->withTimestamps();
+      return $this->belongsToMany('App\Image_Photo','prod_images','prod_id','img_id')->withTimestamps();
     }
 
     public function department()
