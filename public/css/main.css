@@ -588,6 +588,17 @@ li.nav-item:hover a.nav-link:before, li.nav-item:hover a.nav-link:after {
 
 .mainImg{
   max-width: 320px;
+  margin-left: 10px;
+}
+
+.mycard{
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+    transition: box-shadow 0.28s cubic-bezier(0.4,0,0.2,1);
+}
+
+.mycard:hover{
+  box-shadow: 5px 10px 10px 5px rgba(255, 83, 83, 0.2), 5px 6px 10px 5px rgba(0, 0, 0, 0.3);
+  
 }
 
 .col.left

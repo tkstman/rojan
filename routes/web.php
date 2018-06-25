@@ -64,3 +64,8 @@ Route::get('/messageTest', [
   'uses' => 'ProductController@showMessage',
   'as' => 'showMessage'
 ]);
+
+Route::get('/product/{id}',[
+  'uses' => 'ProductController@getProduct',
+  'as' => 'product.display'
+]);

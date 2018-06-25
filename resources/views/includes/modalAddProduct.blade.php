@@ -40,6 +40,10 @@
               <textarea rows="4" class="form-control" id="inputDetails" name="inputDetails" placeholder=""  value="{{Request::old('inputDetails')}}"></textarea>
             </div>
             <div class="form-group">
+              <label for="inputDetails">Product Manufacturer</label>
+              <input type="text" class="form-control" id="inputManufacturer" name="inputManufacturer" placeholder="Manufacturer"  value="{{Request::old('inputManufacturer')}}"/>
+            </div>
+            <div class="form-group">
               <label for="inputDept">Departments</label>
               <div class="form-group col-md-4 deptInpt" >
                 <select class="form-control" name="inputDept" id="inputDept" >
