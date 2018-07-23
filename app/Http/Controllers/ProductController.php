@@ -99,8 +99,10 @@ class ProductController extends Controller
 
     }
 
-    public function getProduct($proid){
-      try {
+    public function getProduct($proid)
+    {
+      try
+      {
 
         $selectedProd = Product::find($proid);
         $prodimgs = $selectedProd->Image_Photo;
@@ -111,7 +113,5 @@ class ProductController extends Controller
       } catch (\Exception $e) {
 
       }
-
-
     }
 }

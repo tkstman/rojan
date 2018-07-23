@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\User;
-
+use App\Product;
 
 
 class UserController extends Controller
@@ -33,6 +33,16 @@ class UserController extends Controller
 
     public function getAccount()
     {
+      try {
+
+        $allProds = Product::simplePaginate(45);
+
+        //return $selectedImgs;
+        return view('account', ['products'=>$allProds]);
+
+      } catch (\Exception $e) {
+
+      }
       return view('account');
     }
 

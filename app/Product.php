@@ -23,6 +23,6 @@ class Product extends Model
 
     public function department()
     {
-      return $this->belongsTo('App\Department','dept_id','prod_id');//->withTimestamps();
+      return $this->belongsTo('App\Department','dept_id');//->withTimestamps();
     }
 }
