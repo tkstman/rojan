@@ -35,7 +35,7 @@ class UserController extends Controller
     {
       try {
 
-        $allProds = Product::simplePaginate(45);
+        $allProds = Product::orderBy('prod_id','desc')->paginate(10);
 
         //return $selectedImgs;
         return view('account', ['products'=>$allProds]);

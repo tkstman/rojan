@@ -52,9 +52,6 @@ $(function() {
     $(document).on('click', '.addProdBox', function() {
       //CLEAR PREVIOUS ERRORS
       $('.errors-rojan').remove();
-
-      //POPULATE QUICK LOOK MODAL
-      console.log('hi');
     //  $('#quicklookmodalAddProd').find('.card-img-top.shadowed').attr('src',$(this).parent().find('.card-img-top.shadowed').attr('src'));  // take the image source
       //$('#quicklookmodalAddProd').find('.card-img-top.shadowed').attr('title',$(this).parent().find('.card-img-top.shadowed').attr('title'));
       $('#quicklookmodalAddProd').modal('show');
@@ -88,6 +85,15 @@ function clearError()
 {
   $(".right-error").text("");
 }
+
+
+$('.img-qwk').on('click', function(){
+    console.log("hi");
+    $('#quicklookimgsmodalct').modal('show');
+    $('#quicklookimgsmodalct').find('.card-img-top.shadowed').attr('src',$(this).attr('src'));
+    $('#quicklookimgsmodalct').find('.productName').text($(this).parent().parent().children()[1].textContent);
+    $('#quicklookimgsmodalct').find('.manufacturerName').text($(this).parent().parent().children()[4].textContent);
+});
 
 /*
   ADD IMAGE BUTTON CLICK

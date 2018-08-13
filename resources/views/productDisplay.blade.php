@@ -7,10 +7,10 @@
 @section('content')
 <div class="container">
   <div class="row latest">
-    <div class="col left">
+  <div class="col left">
       <div class="leftImgPnContainer">
         <ul class="leftImgPn">
-          @foreach ($prodimgs as $img)
+          @foreach ($product->Image_Photo as $img)
             <li class="imgCnt">
               <img class="panelImg mycard" src="{{url('photos/' . $img->img_path)}}" alt="text-image"/>
             </li>
@@ -18,10 +18,11 @@
         </ul>
       </div>
       <div class="rightImgPnContainer">
-        <img class="mainImg mycard" src="{{url('photos/' . $prodimgs[0]->img_path)}}" alt="text-image"/>
+        <img class="mainImg mycard" src="{{url('photos/' . $product->Image_Photo[0]->img_path)}}" alt="text-image"/>
       </div>
-    </div>
-    <div class="col middle">
+  </div>
+  {{-- <!---->--}}
+  <div class="col middle">
       <div class="manufacturer-prod-page">
         <a class="manufacturer-name">{{$product->manufacturer}}</a>
       </div>

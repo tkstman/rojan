@@ -69,7 +69,7 @@
                   <td>
                     @if ($prod->Image_Photo->count() >0)
                       @foreach ($prod->Image_Photo as $photo)
-                        <img src="{{url('photos/' . $photo->img_path)}}" alt="img" style="width:32px;height:32px;border:1px solid cyan;"/>
+                        <img class="img-qwk" src="{{url('photos/' . $photo->img_path)}}" alt="img" style="width:32px;height:32px;border:1px solid cyan;"/>
                       @endforeach
                     @endif
 
@@ -84,6 +84,7 @@
               @endforeach
             </tbody>
           </table>
+          <div class="text-center" style="margin:0 auto;position: relative;width: 300px;">{!!$products->links();!!}</div>
         </div>
       </div>
       </form>
@@ -100,5 +101,6 @@
 <div>
   @include('includes.modalAddProduct')
   @include('includes.modalEditProduct')
+  @include('includes.quicklookimgsmodal')
 </div>
 @endsection

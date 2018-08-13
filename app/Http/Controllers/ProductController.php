@@ -105,10 +105,10 @@ class ProductController extends Controller
       {
 
         $selectedProd = Product::find($proid);
-        $prodimgs = $selectedProd->Image_Photo;
+        //$prodimgs = $selectedProd->Image_Photo;
 
         //return $selectedImgs;
-        return view('productDisplay', ['product'=>$selectedProd,'prodimgs'=>$prodimgs]);
+        return view('productDisplay', ['product'=>$selectedProd]);
 
       } catch (\Exception $e) {
 

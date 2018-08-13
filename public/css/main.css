@@ -598,7 +598,7 @@ li.nav-item:hover a.nav-link:before, li.nav-item:hover a.nav-link:after {
 
 .mycard:hover{
   box-shadow: 5px 10px 10px 5px rgba(255, 83, 83, 0.2), 5px 6px 10px 5px rgba(0, 0, 0, 0.3);
-  
+
 }
 
 .col.left
@@ -959,4 +959,9 @@ a.a-link-section-expander .a-icon-section-collapse, a.a-link-section-expander .a
   .deptInpt
   {
     padding:0;
+  }
+
+  .img-qwk:hover
+  {
+    cursor: pointer;
   }
