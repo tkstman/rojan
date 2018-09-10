@@ -61,7 +61,38 @@ $(function() {
 //TRIGGER QUICK LOOK EDIT PRODUCT MODAL
 $(function() {
     $(document).on('click', '.btn.btn-outline-dark.edit', function() {
+      //CLEAR EDIT MODAL
+
       //POPULATE QUICK LOOK MODAL
+      if(!jQuery.isEmptyObject($(this).parent().parent().parent())) //Get the id of the product
+      {
+        var idElm=$(this).parent().parent().parent().find('th').first();
+        console.log(idElm.html().trim());
+        if(!jQuery.isEmptyObject(idElm) && !jQuery.isEmptyObject(idElm.html().trim()))
+        {
+          var id=idElm.html().trim();
+
+          console.log("not empty");
+          // $.ajax({
+          //   url:
+          // });
+          $.ajax({
+              type: 'GET',
+              url:"/productData/"+id,
+              processData: false,
+              contentType: false,
+              dataType: 'json'
+
+          }).done(function (msg) {
+              var resp = JSON.parse(JSON.stringify(msg));//JSON.parse(msg);
+              console.log(resp);
+              if(Object.keys(resp).length<1)
+              {
+                console.log("The Object Is Empty");
+              }
+          });
+        }
+      }
     //  $('#quicklookmodalAddProd').find('.card-img-top.shadowed').attr('src',$(this).parent().find('.card-img-top.shadowed').attr('src'));  // take the image source
       //$('#quicklookmodalAddProd').find('.card-img-top.shadowed').attr('title',$(this).parent().find('.card-img-top.shadowed').attr('title'));
       $('#quicklookmodalEditProd').modal('show');

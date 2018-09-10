@@ -69,3 +69,8 @@ Route::get('/product/{id}',[
   'uses' => 'ProductController@getProduct',
   'as' => 'product.display'
 ]);
+
+Route::get('/productData/{id}',[
+  'uses' => 'ProductController@getProductData',
+  'as' => 'product.data'
+]);

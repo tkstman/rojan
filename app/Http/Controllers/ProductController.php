@@ -114,4 +114,21 @@ class ProductController extends Controller
 
       }
     }
+
+    public function getProductData($proid)
+    {
+      try
+      {
+        $selectedProd = Product::find($proid);
+        if(count($selectedProd))
+        {
+          $selectedProd->load('Image_Photo');
+          return response()->json($selectedProd);
+        }
+        return "{}";
+
+      } catch (\Exception $e) {
+
+      }
+    }
 }
